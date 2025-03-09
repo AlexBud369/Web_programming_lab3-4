@@ -8,47 +8,32 @@
 </head>
 <body>
     <header class="header">
-        <div class="wrapper">
-            <div class="header__navbar">
+        <div class="header__container">
+            <a href="/" class="header__logo">
+                <img src="images/EFood-logo.svg" alt="EFood" class="header__logo-img">
+            </a>      
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="/" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#service" class="nav__link">Service</a></li>
+                    <li class="nav__item"><a href="#cities" class="nav__link">Top cities</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contract</a></li>
+                </ul>
+            </nav>    
+            <div class="header__actions">
+                <button class="action__search">
+                    <img src="images/Search.svg" alt="Search">
+                </button>
                 
-                <div class="header__logo">
-                    <a href="/" class="header__logo-link">
-                        <img src="images/EFood-logo.svg" alt="EFood Logo" class="header__logo-pic">
-                    </a>
-                </div>
-
-                
-                <nav class="header__right">
-                    <ul class="header__right-menu">
-                        <li class="header__right-list">
-                            <a class="header__right-link" href="/">Home</a>
-                        </li>
-                        <li class="header__right-list">
-                            <a class="header__right-link" href="/service">Service</a>
-                        </li>
-                        <li class="header__right-list">
-                            <a class="header__right-link" href="/top-cities">Top Cities</a>
-                        </li>
-                        <li class="header__right-list">
-                            <a class="header__right-link" href="/contact">Contact</a>
-                        </li>
-                        <li class="header__right-list">
-                            <a class="header__right-link" href="/service">
-                                <img src="images/Search.svg" alt="Search Icon" class="header__icon">
-                            </a>
-                        </li>
-                        <li class="header__right-list">
-                            <a class="header__right-link" href="/service">
-                                <img src="images/Buy.png" alt="Order Icon" class="header__icon">
-                            </a>
-                        </li>
-                    </ul>
-
-                    
-                    <button class="header__right-button">Sign up</button>
-                </nav>
+                <button class="action__cart">
+                    <img src="images/Buy.png" alt="Buy">
+                    <span class="cart__badge">4</span>
+                </button>
+            
+                <button class="header__right-button">Sign Up</button>
             </div>
         </div>
     </header>
+    
 </body>
 </html>
