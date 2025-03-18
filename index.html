@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="container">
     <header class="header">
         <div class="header__container">
-            <a href="/">
-                <img src="images/EFood-logo.svg" alt="EFood" class="header__logo-img">
-            </a>      
+              <h2 class="header__logo">
+                <span>EFood</span>
+              </h2>
+                  
             <nav class="header__nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="/" class="nav__link active">Home</a></li>
@@ -22,11 +24,11 @@
             </nav>    
             <div class="header__actions">
                 <button class="action__search">
-                    <img src="images/Search.svg" alt="Search">
+                    <img src="images/little_search.png" alt="Search">
                 </button>
                 
                 <button class="action__cart">
-                    <img src="images/Buy.png" alt="Buy">
+                    <img src="images/cart.png" alt="Buy">
                     
                 </button>
                 <span class="cart__badge">4</span>
@@ -112,11 +114,11 @@
                     <p class="block-text">Sandwich</p>
                 </article>
                 <article class="image-text-block">
-                    <img src="images/christmas-dinner.png" alt="Asian Food" class="block-image">
+                    <img src="images/asian food.png" alt="Asian Food" class="block-image">
                     <p class="block-text">Asian Food</p>
                 </article>
                 <article class="image-text-block">
-                    <img src="images/set_menu.png" alt="Set Menu" class="block-image">
+                    <img src="images/set menu.png" alt="Set Menu" class="block-image">
                     <p class="block-text">Set Menu</p>
                 </article>
             </div>
@@ -194,42 +196,117 @@
             </article>
         </section>
         <section class="home-section">
-            
             <article class="home-image">
-              <img src="images/food delivery.png" alt="Stay at home">
+                <img src="images/food delivery.png" alt="Stay at home">
             </article>
-          
-            
             <article class="home-content">
-
-              <h2 class="home-title">
-                <span class="first-word">Stay</span> at home, we will<br>
-                Provide <span class="last-words">good food</span>
-              </h2>
+                <h2 class="home-title">
+                    <span class="first-word">Stay</span> at home, we will<br>
+                    Provide <span class="last-words">good food</span>
+                </h2>
+                <p class="home-text">
+                    We provide tasty food and superfast delivery at your home.&nbsp;&nbsp;Let’s use our services right now and get discounts of up to 50%.
+                </p>
           
-
-              <p class="home-text">
-                We provide tasty food and superfast delivery at your home.&nbsp;&nbsp;Let’s use our services right now and get discounts of up to 50%.
-              </p>
-          
-              <article class="home-features">
-                <div class="feature">
-                  <img src="images/stopwatch 1.png" alt="Feature 1" class="feature-icon">
-                  <p class="feature-text">Fasted Delivery in 30 Minutes</p>
-                </div>
-                <div class="feature">
-                  <img src="images/Delivery icon.png" alt="Feature 2" class="feature-icon">
-                  <p class="feature-text">300+ Delivery Men</p>
-                </div>
-                <div class="feature">
-                  <img src="images/Resturent icon.png" alt="Feature 3" class="feature-icon">
-                  <p class="feature-text">500+ Restaurant & Cafe Shop</p>
-                </div>
-              </article>
-          
-              <button class="home-button">See more</button>
+                <article class="home-features">
+                    <div class="feature">
+                        <img src="images/stopwatch 1.png" alt="Feature 1" class="feature-icon">
+                        <p class="feature-text">Fasted Delivery in 30 Minutes</p>
+                    </div>
+                    <div class="feature">
+                        <img src="images/Delivery icon.png" alt="Feature 2" class="feature-icon">
+                        <p class="feature-text">300+ Delivery Men</p>
+                    </div>
+                    <div class="feature">
+                        <img src="images/Resturent icon.png" alt="Feature 3" class="feature-icon">
+                        <p class="feature-text">500+ Restaurant & Cafe Shop</p>
+                    </div>
+                </article>
+                <button class="home-button">See more</button>
             </article>
-          </section>
+        </section>
+        <section class="top_food_section">
+            <h2 class="top_food_section_title">Top Food <span class="restaurant_span">Restaurant</span></h2>
+            <article class="top_food_container">
+                <article class="top_food_grid-item">
+                    <img src="images/blaze pizza.png" alt="Image 1" class="top_food">
+                    <p class="top_food_text">Blaze Pizza</p>
+                    <div class="top_food_footer">
+                        <img src="images/timer.png" alt="timer" class="timer-icon">
+                        <span class="footer-text">11.00 AM - 10.00 PM</span>
+                        <button class="footer-button">
+                            <img src="images/arrow.png" alt="arrow" class="arrow-icon">
+                        </button>
+                    </div>
+                </article>
+          
+              
+                <article class="top_food_grid-item">
+                    <img src="images/pizza ranch.png" alt="Image 1" class="top_food">
+                    <p class="top_food_text">Pizza Ranch</p>
+                    <div class="top_food_footer">
+                        <img src="images/timer.png" alt="timer" class="timer-icon">
+                        <span class="footer-text">09.00 AM - 10.00 PM</span>
+                        <button class="footer-button">
+                            <img src="images/arrow.png" alt="arrow" class="arrow-icon">
+                        </button>
+                    </div>
+                </article>
+            
+                <!-- Третий блок -->
+                <article class="top_food_grid-item">
+                    <img src="images/dion pizza.png" alt="Image 1" class="top_food">
+                    <p class="top_food_text">Dion’s Pizza Hut</p>
+                    <div class="top_food_footer">
+                        <img src="images/timer.png" alt="timer" class="timer-icon">
+                        <span class="footer-text">10.00 AM - 12.00 PM</span>
+                        <button class="footer-button">
+                            <img src="images/arrow.png" alt="arrow" class="arrow-icon">
+                        </button>
+                    </div>
+                </article>
+            
+                <!-- Четвертый блок -->
+                <article class="top_food_grid-item">
+                    <img src="images/royel burger.png" alt="Image 1" class="top_food">
+                    <p class="top_food_text">Royel Burger</p>
+                    <div class="top_food_footer">
+                        <img src="images/timer.png" alt="timer" class="timer-icon">
+                        <span class="footer-text">11.00 AM - 10.00 PM</span>
+                        <button class="footer-button">
+                            <img src="images/arrow.png" alt="arrow" class="arrow-icon">
+                        </button>
+                    </div>
+                </article>
+            
+                <!-- Пятый блок -->
+                <article class="top_food_grid-item">
+                    <img src="images/kfc.png" alt="Image 1" class="top_food">
+                    <p class="top_food_text">KFC Restaurant</p>
+                    <div class="top_food_footer">
+                        <img src="images/timer.png" alt="timer" class="timer-icon">
+                        <span class="footer-text">09.00 AM - 10.00 PM</span>
+                        <button class="footer-button">
+                            <img src="images/arrow.png" alt="arrow" class="arrow-icon">
+                        </button>
+                    </div>
+                </article>
+            
+                <!-- Шестой блок -->
+                <article class="top_food_grid-item">
+                    <img src="images/star food.png" alt="Image 1" class="top_food">
+                    <p class="top_food_text">Star Food</p>
+                    <div class="top_food_footer">
+                        <img src="images/timer.png" alt="timer" class="timer-icon">
+                        <span class="footer-text">10.00 AM - 12.00 PM</span>
+                        <button class="footer-button">
+                            <img src="images/arrow.png" alt="arrow" class="arrow-icon">
+                        </button>
+                    </div>
+                </article>
+            </article>
+        </section>
     </main>
+</div>
 </body>
 </html>
