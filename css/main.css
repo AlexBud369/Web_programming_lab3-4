@@ -1141,6 +1141,170 @@ text-transform: capitalize;
 }
 
 
+/* Основные стили секции */
+.testimonial-section {
+  width: 1162px;
+  margin-left: 139px;
+  margin-right: 139px;
+  margin-top: 168px;
+  text-align: center;
+}
+
+.testimonial-section h2 {
+  height: 43px;
+  color: var(--Primary, #363853);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin-left: 49px;
+  margin-bottom: 0;
+}
+
+.testimonial-section h2 span{
+  color: var(--Secondary, #FF7A50);
+}
+
+/* Контейнер для содержимого */
+.testimonial-content {
+  
+  display: flex;
+  align-items: center;
+  gap: 68px;
+  max-width: 1162px;
+  width: 1162px;
+  height: 528px;
+  position: relative;
+  margin-left: 0;
+  margin-top: 60px;
+}
+
+.testimonial-image{
+  width: 433px;
+  height: 600px;
+}
+
+/* Левая картинка */
+.testimonial-image img {
+  width: 433px;
+  height: 600px;
+  border-radius: 24px;
+  object-fit: cover;
+  
+  margin-left: 2px;
+  margin-top: 26px;
+}
+
+.client_block1 {
+  display: flex;
+  flex-direction: column;
+  width: 661px;
+  height: 340px;
+  margin-left: 0px;
+  margin-bottom: 42px;
+}
+
+.client_block2{
+  display: flex;
+  flex-direction:row;
+  width: 661px;
+  height: 60px;
+  margin-left: 0px;
+  margin-top: 42px;
+}
+/* Текст и кавычки */
+.testimonial-text {
+ 
+ 
+  width: 661px;
+  height: 240px;
+  text-align: left;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.quote-open {
+  position: relative;
+  top: 5px;
+  left: 7px;
+  width: 23px;
+  height: 18px;
+}
+
+.quote-close {
+  position: absolute;
+  bottom: 213px;
+  right: 2px;
+  width: 23px;
+  height: 18px;
+}
+
+.testimonial-text p {
+  width: 573px;
+  height: 206px;
+  color: var(--Primary, #363853);
+  font-size: 20px;
+  font-style: normal;
+  line-height: 45px; /* 225% */
+  letter-spacing: 0.5px;
+  margin-left: 48px;
+  margin-top: -21px;
+}
+
+
+
+/* Имя и подпись */
+.testimonial-author {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 0px;
+  margin-left: 58px;
+}
+
+.author-name {
+  color: var(--Secondary, #FF7A50);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.author-title {
+  color: #AAA;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  margin-top: 18px;
+}
+
+/* Стрелочки перехода */
+.testimonial-navigation {
+  display: flex;
+  gap: 44px;
+
+  /*right: 0;
+  bottom: 0;*/
+  margin-left: 322px;
+  margin-top: 19px;
+  
+}
+
+.arrow-left,
+.arrow-right {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 0.8;
+}
+
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .header {
     margin: 50px 80px;
