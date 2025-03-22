@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/rubik-v28-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* rubik-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -35,6 +43,8 @@
 body, button {
   font-family: 'Rubik', sans-serif;
   font-weight: 400; 
+  margin: 0;
+  padding: 0;
   
 }
 
@@ -902,9 +912,9 @@ text-transform: capitalize;
 }
 
 
-/* Основная секция */
+
 .top_food_section {
-  max-width: 1200px;
+  max-width: 1169px;
   width: 1169px;
   margin-left: 135.5px;
   margin-right: 135.5px;
@@ -933,16 +943,19 @@ text-transform: capitalize;
 
 
 .top_food_container {
+  width: 1169px;
+  height: 877px;
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   justify-content: stretch;
-  gap: 43px; 
-  margin-top: 48px;
+  row-gap: 43px; 
+  column-gap: 42px;
+  margin-top: 50px;
 }
 
 
 .top_food_grid-item {
-  width: 361px;
+  width: 362px;
   height: 417px;
   border-radius: 53px 5px;
   background: #FFF;
@@ -956,9 +969,8 @@ text-transform: capitalize;
 
 
 .top_food {
-  width: 361px;
+  width: 362px;
   height: 299px;
-  
   
 }
 
@@ -976,21 +988,24 @@ text-transform: capitalize;
 /* Нижняя часть (иконка, текст, кнопка) */
 .top_food_footer {
   width: 302px;
+  height: 33px;
   display: flex;
   align-items: center;
-
+  margin-left: 19px;
+  margin-top: 14px;
 }
 
 
 .timer-icon {
   width: 23px;
   height: 22px;
-  margin-left: 19px;
-  margin-top: 0;
+  margin-left: 0px;
 }
 
 /* Текст иконки */
 .footer-text {
+  width: 169px;
+  height: 30px;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -998,7 +1013,8 @@ text-transform: capitalize;
   color: var(--Primary, #363853);
   opacity: 0.9;
   margin-left: 8px;
-  margin-top: 22px;
+ /* margin-left: 8px;
+  margin-top: 22px;*/
 }
 
 /* Кнопка */
@@ -1009,13 +1025,15 @@ text-transform: capitalize;
   background: var(--Secondary, #FF7A50);
   box-shadow: 0px 5px 12px 0px rgba(255, 104, 56, 0.19);
   padding: 8px 16px;
-  font-size: 14px;
   color: #fff;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-left: 30px;
-  margin-top: 0;
+  margin-left: 24px;
+  margin-top: 11px;
+  margin-bottom: 22px;
+  /*margin-left: 30px;
+  margin-top: 0;*/
 }
 
 .arrow-icon{
@@ -1026,7 +1044,100 @@ text-transform: capitalize;
 
 
 .footer-button:hover {
-  background-color: #0056b3; /* Цвет фона при наведении */
+  background-color: #0056b3; 
+}
+
+
+
+.app-download-section {
+  width: 1170px;
+  height: 480px;
+  display: flex;
+  justify-content: space-between; 
+  gap: 6px;
+  max-width: 1170px;
+  margin-left: 135px;
+  margin-right: 135px;
+  margin-top: 163px;
+}
+
+
+.app-text-content {
+  max-width: 524px;
+  width: 524px; 
+  height: 243px;
+  margin-top: 116px;
+}
+
+.app-title {
+  color: var(--Primary, #363853);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 138.889% */
+  text-transform: capitalize;
+  margin-top: 3px;
+}
+
+.app-title span{
+  color: var(--Secondary, #FF7A50);
+
+}
+
+.app-description {
+  height: 94px;
+  color: #363853;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  margin-top: 30px;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 27px;
+  margin-top: 30px;
+  
+}
+
+.apple_button{
+  width: 120px;
+  height: 40px;
+  border-radius: 7px;
+ 
+  border: none;
+  
+  /*display: inline-block;
+   overflow: hidden;
+  
+ 
+  background-color: transparent;
+  background-repeat: no-repeat; 
+  background-size: cover; */
+  background-position: center; 
+  
+   
+  background-image: url('../images/Apple.png');
+  
+}
+
+.google_button{
+  width: 135px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-position: center; 
+  background-image: url('../images/Google\ Play.png');
+}
+
+
+.app-image {
+  width: 634px;
+  height: 480px;
+  
+  margin-left: 0px;
+  margin-top: 3px;
 }
 
 
